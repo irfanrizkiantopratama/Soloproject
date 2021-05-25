@@ -1,12 +1,12 @@
 /* Preloader */
-$(window).on('load', function () { //make sure  that full site is loaded
+$(window).on('load', function() { //make sure  that full site is loaded
     $('#status').fadeOut();
     $('#preloader').delay(350).fadeOut();
 });
 
 
 /* Team */
-$(function () {
+$(function() {
     $("#team-members").owlCarousel({
         items: 2,
         autoplay: 2,
@@ -21,11 +21,11 @@ $(function () {
 
 
 /* Progress bar */
-$(function () {
+$(function() {
 
-    $("#progress-elements").waypoint(function () {
+    $("#progress-elements").waypoint(function() {
 
-        $(".progress-bar").each(function () {
+        $(".progress-bar").each(function() {
 
             $(this).animate({
                 width: $(this).attr("aria-valuenow") + "%"
@@ -40,7 +40,7 @@ $(function () {
 
 
 /* Responsive tabs */
-$(function () {
+$(function() {
 
     $("#services-tabs").responsiveTabs({
         animation: 'slide'
@@ -49,7 +49,7 @@ $(function () {
 
 
 /* Portofolio */
-$(window).on('load', function () {
+$(window).on('load', function() {
 
     //Initialize isotope
     $("#isotope-container").isotope({
@@ -57,7 +57,7 @@ $(window).on('load', function () {
     });
 
     //filter item button click
-    $("#isotope-filters").on('click', 'button', function () {
+    $("#isotope-filters").on('click', 'button', function() {
 
         //get filter value
         var filtersValue = $(this).attr('data-filter');
@@ -76,7 +76,7 @@ $(window).on('load', function () {
 
 
 /*  Magnifier */
-$(function () {
+$(function() {
     $("#portofolio-wrapper").magnificPopup({
         delegate: 'a', // child items selector, by clicking on it popup will open
         type: 'image',
@@ -88,7 +88,7 @@ $(function () {
 
 
 /* Testimonial Jquery */
-$(function () {
+$(function() {
     $("#testimonial-slider").owlCarousel({
         items: 1,
         autoplay: false,
@@ -103,7 +103,7 @@ $(function () {
 
 /* Stats */
 
-$(function () {
+$(function() {
 
     $(".counter").counterUp({
         delay: 10,
@@ -116,7 +116,7 @@ $(function () {
 
 /* Clients */
 
-$(function () {
+$(function() {
     $("#clients-list").owlCarousel({
         items: 6,
         autoplay: false,
@@ -127,4 +127,22 @@ $(function () {
         dots: false,
         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
     });
+});
+
+
+/* google Maps */
+$(window).on('load', function() {
+
+    //map variable
+    var addressString = 'Cijawura Girang v , Bandung indonesia';
+    var myLatlng = { lat: -6.946150, lng: 107.647370 };
+
+    //render map
+    var map = new google.maps.Map(
+        document.getElementById('map'), {
+            zoom: 11;
+            center: myLatlng;
+
+        });
+
 });

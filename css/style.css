@@ -1063,6 +1063,7 @@ ul.social-list li:nth-child(3) a:hover {
     font-weight: 300;
 }
 
+
 .blog-post a {
     display: inline-block;
     margin-top: 25px;
@@ -1133,7 +1134,40 @@ ul.office-details li i {
 }
 
 
+/* contact right */
+#contact-right {
+    padding: 25px 30px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;   
+}
 
+#contact-right h4 {
+    font-size: 24px;;
+}
+
+#contact-right p {
+    margin-bottom: 25px;
+}
+
+
+#contact-right form .form-control {
+    font-family: "Open Sans", sans-serif;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+#contact-right form textarea.form-control {
+    min-height: 164px;
+}
+
+
+/* Google Maps Container */
+
+#map {
+    height: 600px;
+}
 
 
 
