@@ -140,8 +140,8 @@ $(window).on('load', function() {
     //render map
     var map = new google.maps.Map(
         document.getElementById('map'), {
-            zoom: 11;
-            center: myLatlng;
+            zoom: 11,
+            center: myLatlng
 
         });
 
