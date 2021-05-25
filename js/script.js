@@ -131,7 +131,7 @@ $(function() {
 
 
 /* google Maps */
-$(window).on('load', function() {
+/*$(window).on('load', function() {
 
     //map variable
     var addressString = 'Cijawura Girang v , Bandung indonesia';
@@ -145,4 +145,4 @@ $(window).on('load', function() {
 
         });
 
-});
+}); */
